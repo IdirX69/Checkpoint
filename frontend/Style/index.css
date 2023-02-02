@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+*::-moz-selection {
+  color: #fafeff;
+  background: #00c1ec;
+}
+*::selection {
+  color: #fafeff;
+  background: #00c1ec;
+}
+
+a,
+a:visited {
+  color: rgb(141, 141, 141);
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: #e7f7fe;
+  color: rgb(40, 40, 40);
+}
+
+main {
+  position: relative;
+}
+
+.button {
+  background: #00c1ec;
+  height: 55px;
+  width: 126px;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media screen and (min-width: 1200px) {
+  .button:hover {
+    letter-spacing: 1px;
+    color: #00c1ec;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+h5 {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.contacts {
+  height: 100vh;
+  margin: 5rem 0;
+  margin-bottom: 20vh;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts .contact-list {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.contacts .contact-title {
+  margin-top: 3rem;
+  width: 70%;
+  text-align: center;
+}
+
+.contact-title h2 {
+  width: 100%;
+  margin: auto;
+}
+
+.navigation .disconnect {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  z-index: 10000000;
+}
+.navigation img {
+  margin-top: 2px;
+  height: 35px;
+}
+
+.card {
+  height: 100px;
+  width: 80%;
+  margin: 17% 10%;
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    margin: 2% 2%;
+    width: 18%;
+    height: 200px;
+    background-color: #fafeff;
+  }
+}
+.card h2,
+.card #name {
+  font-family: "Michroma", serif;
+  font-size: 1rem;
+  background-color: #fafeff;
+  text-align: center;
+  width: 50%;
+  border-radius: 5px;
+  padding: 5px;
+}
+.card .card-info,
+.card form {
+  height: 100px;
+  background-color: #fafeff;
+  color: #00c1ec;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .card .card-info,
+.card form {
+    margin: 2% 2%;
+    width: 80%;
+    background-color: #fafeff;
+  }
+}
+.card .card-info h3,
+.card .card-info input,
+.card .card-info select,
+.card .card-info option,
+.card form h3,
+.card form input,
+.card form select,
+.card form option {
+  font-family: "Questrial", sans-serif;
+  margin: 1px;
+  color: #00c1ec;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.card .card-info input,
+.card .card-info select,
+.card .card-info option,
+.card form input,
+.card form select,
+.card form option {
+  width: 50%;
+  border-bottom: 1px solid #00c1ec;
+}
+.card .contact-header {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4px 0;
+}
+.card .contact-manage {
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  background-color: #fafeff;
+}
+.card .contact-manage img {
+  height: 25px;
+  margin: 0 0.7rem;
+  text-align: center;
+}
+.card .valid-img {
+  height: 30px;
+}
+.card button {
+  border: none;
+  background: none;
+}
+.card .submit-button {
+  width: 50px;
+  position: relative;
+  left: 15rem;
+  bottom: 4rem;
+}
+.card form {
+  padding: 0;
+}
+
+.add-contact {
+  margin-top: 5vh;
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+}
+@media screen and (min-width: 740px) {
+  .add-contact {
+    margin: 1.5rem 0 0 30%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .add-contact {
+    margin-left: 2rem;
+  }
+}
+.add-contact h2 {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.add-contact h2:after {
+  content: "";
+  height: 70px;
+  width: 70px;
+  border: 1px #00c1ec solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -22px;
+  left: 133px;
+  z-index: -1;
+}
+.add-contact .button {
+  background-color: #00c1ec;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.add-contact form {
+  display: flex;
+  flex-direction: column;
+}
+.add-contact form select {
+  width: 50%;
+  background: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #00c1ec;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 1200px) {
+  .add-contact form select {
+    font-size: 1.5rem;
+  }
+}
+.add-contact form input {
+  background: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #00c1ec;
+  border-radius: 5px;
+  margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  .add-contact form input {
+    font-size: 1.5rem;
+  }
+}
+.add-contact form input {
+  padding: 10px 6px;
+  margin-bottom: 10px;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?w=1800&t=st=1675352225~exp=1675352825~hmac=f3022c300f43705ba97092a9369dac94e5abee90e15cc017af08bf193a754a5c");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem;
+  color: rgba(141, 141, 141, 0.9);
+}
+@media screen and (min-width: 1200px) {
+  .home-container h1 {
+    font-size: 4rem;
+  }
+}
+.home-container .home-header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-container .home-header img {
+  width: 100%;
+  height: 45vh;
+}
+.home-container .button-home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-container button {
+  background-color: #00c1ec;
+}
+.home-container .home-header {
+  height: 40%;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  line-height: 1.2rem;
+  background-color: rgba(141, 141, 141, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .home-container .home-header {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    width: 60%;
+    padding: 1.5rem;
+  }
+}
+
+.register-login-form {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register-login-form h2 {
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+.register-login-form h2:after {
+  content: "";
+  height: 70px;
+  width: 70px;
+  border: 1px #00c1ec solid;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.register-login-form input {
+  width: 100%;
+  background: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #00c1ec;
+  border-radius: 5px;
+  margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  .register-login-form input {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+}
+.register-login-form input {
+  padding: 10px 6px;
+  margin-bottom: 10px;
+}
+.register-login-form label {
+  width: 90%;
+}
+@media screen and (min-width: 1200px) {
+  .register-login-form label {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+}/*# sourceMappingURL=index.css.map */

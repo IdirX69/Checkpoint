@@ -1,0 +1,68 @@
+.add-contact {
+  margin-top: 5vh;
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+  @media screen and (min-width: 740px) {
+    margin: 1.5rem 0 0 30%;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 440px) {
+    margin-left: 2rem;
+  }
+  h2 {
+    margin-bottom: 50px;
+    width: 100%;
+
+    &:after {
+      content: "";
+      height: 70px;
+      width: 70px;
+      border: 1px $color-2 solid;
+      border-radius: 50%;
+      position: absolute;
+      top: -22px;
+      left: 133px;
+      z-index: -1;
+    }
+  }
+  .button {
+    background-color: $color-2;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    select {
+      width: 50%;
+      background: none;
+      font-family: $font-1;
+      font-size: 1.2rem;
+      border-bottom: 1px solid $color-2;
+      border-radius: 5px;
+      margin: 2rem 0;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1.5rem;
+      }
+    }
+    input {
+      background: none;
+      font-family: $font-1;
+      font-size: 1.2rem;
+      border-bottom: 1px solid $color-2;
+      border-radius: 5px;
+      margin: 0;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1.5rem;
+      }
+    }
+    input {
+      padding: 10px 6px;
+      margin-bottom: 10px;
+    }
+  }
+}

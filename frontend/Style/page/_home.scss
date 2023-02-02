@@ -1,0 +1,50 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?w=1800&t=st=1675352225~exp=1675352825~hmac=f3022c300f43705ba97092a9369dac94e5abee90e15cc017af08bf193a754a5c");
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem;
+    color: rgba($color-4, $alpha: 0.9);
+    @media screen and (min-width: 1200px) {
+      font-size: 4rem;
+    }
+  }
+  .home-header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 45vh;
+    }
+  }
+  .button-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    background-color: $color-2;
+  }
+  .home-header {
+    height: 40%;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.2rem;
+    background-color: rgba($color-4, $alpha: 0.2);
+    @media screen and (min-width: 1200px) {
+      font-size: 1.9rem;
+      line-height: 3rem;
+      width: 60%;
+      padding: 1.5rem;
+    }
+  }
+}

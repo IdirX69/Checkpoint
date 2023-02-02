@@ -1,0 +1,48 @@
+.register-login-form {
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    &:after {
+      content: "";
+      height: 70px;
+      width: 70px;
+      border: 1px $color-2 solid;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  input {
+    width: 100%;
+    background: none;
+    font-family: $font-1;
+    font-size: 1.2rem;
+    border-bottom: 1px solid $color-2;
+    border-radius: 5px;
+    margin: 0;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 1.5rem;
+      width: 30%;
+    }
+  }
+  input {
+    padding: 10px 6px;
+    margin-bottom: 10px;
+  }
+  label {
+    width: 90%;
+    @media screen and (min-width: 1200px) {
+      font-size: 1.5rem;
+      width: 30%;
+    }
+  }
+}
